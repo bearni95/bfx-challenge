@@ -18,6 +18,13 @@ grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002'
 grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'
 ```
 
+To install the repository you must clone it, navigate inside of it, and install its dependencies:
+```
+git clone https://github.com/bearni95/bfx-challenge
+cd bfx-challenge
+npm i
+```
+
 Then you can exercise the code found on the [test folder](test) by running:
 ```
 npm run test
