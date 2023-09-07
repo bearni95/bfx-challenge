@@ -7,19 +7,18 @@
 - [x] You don't need to create a UI or HTTP API
 
 ## How to run
-Ensure that you have Granache installed:
+Ensure that you have Grenache installed:
 ```
 npm i -g grenache-grape
 ```
 
 And that you have two nodes running:
 ```
-
 grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002'
 grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'
 ```
 
-You can run the code implementation from the `test` folder:
+Then you can exercise the code found on the [test folder](test) by running:
 ```
 npm run test
 ```
