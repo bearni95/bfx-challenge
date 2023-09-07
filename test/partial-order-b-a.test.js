@@ -1,8 +1,5 @@
-const Server = require('../src/Server.class.js')
-const Client = require('../src/Client.class.js')
-const { wait, CoinPrices } = require('../src/utils.js')
-
-require('jest')
+const { Server, Client, utils } = require('../src')
+const { wait, CoinPrices } = utils
 
 describe('Partial Order: B > A', () => {
   const sourceCoin = 'BTC'

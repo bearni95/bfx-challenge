@@ -1,8 +1,5 @@
-const Server = require('../src/Server.class.js')
-const Client = require('../src/Client.class.js')
-const { wait, CoinPrices } = require('../src/utils.js')
-
-require('jest')
+const { Server, Client, utils } = require('../src')
+const { wait, CoinPrices } = utils
 
 describe('FullOrder', () => {
   const sourceCoin = 'BTC'
@@ -43,7 +40,7 @@ describe('FullOrder', () => {
 
   it('should totally fulfill the order with clientB', async () => {
     const { order } = await clientB.createOrder(targetCoin, sourceCoin, targetAmount)
-    console.log(order)
+
     expect(order).toBeDefined()
     expect(order.sourceCoin).toBe(targetCoin)
     expect(order.targetCoin).toBe(sourceCoin)
